@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar">
+        <p id="month"></p>
+        <p id="day"></p>
+        <p id="date"></p>
+        <p id="year"></p>
+    </div>
+    <script>
+        let date=new Date();
+
+        let month=date.getMonth();
+        let monthName=date.toLocaleString('en-us',{month:'long'});
+        let day=date.getDate();
+        let dayName=date.toLocaleString('en-us',{weekday:'long'});
+        let year=date.getFullYear();
+
+        document.getElementById('month').innerHTML=monthName;
+        document.getElementById('day').innerHTML=dayName;
+        document.getElementById('date').innerHTML=day;
+        document.getElementById('year').innerHTML=year;
+    </script>
+</body>
+</html>

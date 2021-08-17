@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: #111;
+}
+.calendar {
+  position: relative;
+  width: 200px;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #000000);
+}
+.calendar #month {
+  position: relative;
+  padding: 5px 10px;
+  background: rgb(11, 11, 240);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+.calendar #day {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.calendar #date {
+  line-height: 1em;
+  font-size: 80px;
+  font-weight: 700;
+  color: #000;
+}
+.calendar #year {
+  color: #333;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
